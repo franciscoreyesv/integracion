@@ -1,0 +1,60 @@
+<html>
+<head>
+ <meta charset="utf-8">
+ <!-- http://garden.zendesk.com -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@zendeskgarden/css-bedrock@7.0" type="text/css">
+
+   <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.min.js"></script>
+
+   <!-- http://garden.zendesk.com -->
+  <link rel="stylesheet" href="https://assets.zendesk.com/apps/sdk-assets/css/2/zendesk_garden.css" type="text/css">
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+   <!-- CSS y Js de ZerviZ -->
+  <script type="text/javascript" src="js/zerviz/tools.js"></script>
+  <link rel="stylesheet" href="css/zerviz/tools.css" type="text/css">
+
+</head>
+<body>
+Seleccione la opcion que corresponda<br>
+<input type="checkbox" name="like" id="like" required="checked"> Tracking<br>
+<input type="checkbox" name="inci" id="inci" required="checked"> Incidencias<br>
+<input type="checkbox" name="no" id="no" required="checked"> Número De Guía<br>
+
+<input type="text" name="datos" id="datos">
+<button id="ConsultaGuiSI" class="btn btn-info">Buscar</button>
+<br>
+<!--
+	<input type="text" name="empr_cod" id="empr_cod"> Código de la empresa<br>
+		<input type="text" name="suc_cod" id="suc_cod"> Código de la sucursal <br>
+		<input type="text" name="uni_neg_cod" id="uni_neg_cod">Unidad de Negocio<br>
+		<input type="text" name="pro_cod" id="pro_cod">Identificador del producto en consulta<br>
+		<input type="text" name="ord_ano" id="ord_ano">Año interno de la Guía<br>
+		<input type="text" name="ord_nro" id="ord_nro">Número interno de la Guía<br>
+		<input type="text" name="ord_det_nro" id="ord_det_nro">Número de Tracking<br>
+-->
+
+<div id="ta">
+    
+</div>
+
+<script id="requester-template" type="text/x-handlebars-template">
+
+  <div class="card">
+    <div class="card-header">
+       <img src="browsers16.png" alt="Consultar"  onclick="showModal()"> Información
+    </div>
+ </script>
+
+
+ <script type="text/javascript" src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
